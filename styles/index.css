@@ -1,0 +1,79 @@
+
+@font-face {
+    font-family: "Beyno";
+    src: url("../font/BEYNO.ttf");
+}
+@font-face {
+    font-family: "Panthera";
+    src: url("../font/Panthera.ttf");
+}
+@font-face {
+    font-family: "Canterell";
+    src: url("../font/Cantarell.ttf");
+}
+body {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%,
+    #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,
+    rgba(2, 23, 64, 0) 200%) no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    color: #F2CEF2;
+    position: relative;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: Panthera;
+    font-size: 68px;
+    font-weight: initial;
+    margin: 0;
+}
+h2 {
+    font-family: Beyno;
+    font-size: clamp(10px, 3vw,32px);
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/**navbar*/
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+.navbar-left {
+    margin-left: min(9vw,60px);
+    flex-grow: 1;
+}
+.navbar-left__image:nth-child(1) {
+    width: min(4vw,30px);
+    min-width: 15px;
+}
+.navbar-left__image:nth-child(2) {
+    width: min(1vw,20px);
+    min-width: 8px;
+}
+.navbar-left__image:nth-child(3) {
+    width: min(7vw,80px);
+    min-width: 40px;
+}
+.navbar-right {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.navbar-right__item:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.navbar-active {
+    text-decoration: underline;
+    color: #9E91B7;
+}
+/**navbar*/
