@@ -19,13 +19,15 @@ body {
     padding: 0;
     width: 100vw;
     min-height: 100vh;
-    color: #F2CEF2;
+    color: #ffffff;
     position: relative;
     box-sizing: border-box;
+    font-family: Cantarell;
+    font-size: clamp(10px, 2.5vw,16px);
 }
 h1 {
     font-family: Panthera;
-    font-size: 68px;
+    font-size: clamp(20px, 5vw,68px);
     font-weight: initial;
     margin: 0;
 }
@@ -77,3 +79,24 @@ a {
     color: #9E91B7;
 }
 /**navbar*/
+/**header*/
+.header-container{
+    height: min(30vw,450px);
+    min-height: 220px;
+    background: url("../logo/Accueil/Pantherhome1..png") top right no-repeat;
+    background-size: contain;
+    padding-top: min(8vw,170px);
+    padding-left: min(10vw,100px);
+}
+.header-description{
+    width: min(80vw,530px);
+}
+.header-more__button {
+    background: none;
+    outline: none;
+    border: none;
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/**header*/
