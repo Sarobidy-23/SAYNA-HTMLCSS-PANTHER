@@ -79,8 +79,39 @@ a {
     color: #9E91B7;
 }
 /**navbar*/
+/**side header*/
+.side-left {
+    writing-mode: vertical-lr;
+    position: fixed;
+    top: 0;
+    margin: min(20vh,100px) 0 0 min(1vw,20px);
+}
+.side-left__image {
+    width: min(2vw,22px);
+    min-width: 15px
+}
+.side-left__image:hover {
+    filter:  brightness(0) invert(1);
+    cursor: pointer;
+}
+.side-left::before {
+    content: "";
+    position: absolute;
+    left: 47%;
+    bottom: 110%;
+    border: 1px solid #9E91B7;
+    height: 150px;
+}
+.side-left::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+    border: 1px solid #9E91B7;
+    height: 220px;
+}
 /**header*/
-.header-container{
+.header-container {
     height: min(30vw,450px);
     min-height: 220px;
     background: url("../logo/Accueil/Pantherhome1..png") top right no-repeat;
@@ -88,7 +119,7 @@ a {
     padding-top: min(8vw,170px);
     padding-left: min(10vw,100px);
 }
-.header-description{
+.header-description {
     width: min(80vw,530px);
 }
 .header-more__button {
