@@ -140,6 +140,28 @@ a {
 }
 
 /**history*/
+/**military*/
+.military-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 min(10vw,100px) 0 min(10vw,100px);
+}
+.military-video,
+.military-description {
+    width: min(42vw,700px);
+    margin-top: 20px;
+}
+@media (max-width: 500px) {
+    .military-container {
+        flex-direction: column;
+    }
+    .military-video,
+    .military-description {
+        width: 100%;
+    }
+}
+/**military*/
 /**footer*/
 .footer-container {
     background: url("../logo/All\ pages/back_footer.png") center no-repeat;
