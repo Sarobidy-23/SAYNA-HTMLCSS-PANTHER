@@ -14,6 +14,10 @@
     font-family: "Canterell";
     src: url("../font/Cantarell.ttf");
 }
+@font-face {
+    font-family: "WakandaForever";
+    src: url("../font/WakandaForever.ttf");
+}
 body {
     background: radial-gradient(126.67% 350.28% at -21.35% 0%,
     #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,
@@ -89,6 +93,22 @@ a {
     color: #9E91B7;
 }
 /**navbar*/
+/**header*/
+.header-container {
+    height: min(35vw,600px);
+    min-height: 180px;
+    background: url("../logo/Wakanda/Pantherwakanda1.png") center no-repeat;
+    background-size: cover;
+    padding-top: min(8vw,170px);
+    padding-left: min(10vw,100px);
+}
+.header-subtitle {
+    font-family: WakandaForever;
+}
+.header-illustration {
+    width: min(100%,500px);
+}
+/**header*/
 /**footer*/
 .footer-container {
     background: url("../logo/All\ pages/back_footer.png") center no-repeat;
