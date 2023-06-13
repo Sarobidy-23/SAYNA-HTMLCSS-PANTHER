@@ -1,4 +1,7 @@
-
+*, html {
+    scroll-behavior: smooth !important;
+    transition: all 0.5s ease-in-out;
+}
 @font-face {
     font-family: "Beyno";
     src: url("../font/BEYNO.ttf");
@@ -291,3 +294,60 @@ a {
     }
 }
 /**hero*/
+/**contact*/
+.contact-container {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, black),
+    url("../logo/Accueil/Pantherhome7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: min(100vw,700px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff 10%, #ffffff0b);
+    border-radius: min(10vw,60px);
+    padding: min(4vw,25px) min(6vw,80px) min(4vw,25px) min(6vw,80px);
+    color: #021740;
+}
+.conact-title {
+    font-family: Cantarell;
+}
+.contact-input__name,
+.contact-input__email,
+.contact-input__message {
+    width: min(40vw,520px);
+    height: min(10vw,56px);
+    border-radius: min(2vw,38px);
+    padding: 0 min(2vw,38px) 0 min(2vw,38px);
+    font-size: clamp(8px, 4vw,16px);
+    margin-top: min(2vw,20px);
+    background: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.449);
+}
+.contact-input__message {
+    height: auto;
+    padding-top: min(2vw,20px);
+}
+.contact-button {
+    outline: 0;
+    border: 0;
+    background: #F2CEF2;
+    width: min(20vw,174px);
+    height: min(10vw,54px);
+    border-radius: min(2vw,38px);
+    margin-top: 20px;
+    font-size: inherit;
+}
+.contact-button:hover {
+    filter: drop-shadow(0 6px 8px #021740) ;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/**contact*/
