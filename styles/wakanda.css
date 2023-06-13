@@ -151,6 +151,7 @@ a {
 .military-description {
     width: min(42vw,700px);
     margin-top: 20px;
+    margin-left: 5px;
 }
 @media (max-width: 500px) {
     .military-container {
@@ -162,6 +163,33 @@ a {
     }
 }
 /**military*/
+/**cinema*/
+.cinema-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 min(10vw,100px) 0 min(10vw,100px);
+    margin-top: 20px;
+}
+.cinema-left 
+.cinema-right,
+.cinema-right__image {
+    width: min(42vw,700px);
+}
+.cinema-right {
+    margin-left: 5px;
+}
+@media (max-width: 500px) {
+    .cinema-container {
+        flex-direction: column;
+    }
+    .cinema-left 
+    .cinema-right,
+    .cinema-right__image {
+        width: 100%;
+    }
+}
+/**cinema*/
 /**footer*/
 .footer-container {
     background: url("../logo/All\ pages/back_footer.png") center no-repeat;
