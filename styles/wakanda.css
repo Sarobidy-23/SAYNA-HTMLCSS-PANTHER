@@ -109,6 +109,37 @@ a {
     width: min(100%,500px);
 }
 /**header*/
+/**history*/
+.history-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 100px min(10vw,100px) 0 min(10vw,100px);
+}
+.history-background {
+    position: absolute;
+    top: -5%;
+    z-index: -1;
+    width: min(90vw,1500px);
+}
+.history-description {
+    width: min(42vw,700px);
+    margin-left: 5px;
+}
+@media (max-width: 500px) {
+    .history-background {
+        top: 5%;
+    }
+    .history-container {
+        flex-direction: column;
+    }
+    .history-description {
+        width: 100%;
+    }
+}
+
+/**history*/
 /**footer*/
 .footer-container {
     background: url("../logo/All\ pages/back_footer.png") center no-repeat;
