@@ -23,7 +23,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     color: #ffffff;
-    position: relative;
+    position: sticky;
     box-sizing: border-box;
     font-family: Cantarell;
     font-size: clamp(10px, 2vw,16px);
@@ -92,8 +92,8 @@ a {
     margin: min(20vh,100px) 0 0 min(1vw,20px);
 }
 .side-left__image {
-    width: min(2vw,22px);
-    min-width: 15px;
+    width: min(2.5vw,25px);
+    min-width: 20px;
 }
 .side-left__image:hover {
     filter:  brightness(0) invert(1);
@@ -145,6 +145,7 @@ a {
     margin-left: min(9vw,60px);
     display: flex;
     margin-bottom: 5%;
+    overflow-x: hidden;
 }
 .slider-item {
     display: flex;
