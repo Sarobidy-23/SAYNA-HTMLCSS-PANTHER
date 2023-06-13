@@ -51,7 +51,13 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 20px 0 20px 0;
+    padding: min(2vw,20px) 0 min(2vw,20px) 0;
+    background: linear-gradient(to right,
+    #11213F 0%, #0b0b0bf5 39%, rgba(2, 23, 64, 0.918) 94.57%,
+    rgba(2, 23, 64, 0.637) 200%) no-repeat;
+    position: sticky;
+    z-index: 2;
+    top: 0;
 }
 .navbar-left {
     margin-left: min(9vw,60px);
