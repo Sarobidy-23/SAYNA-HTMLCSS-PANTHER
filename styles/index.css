@@ -23,7 +23,7 @@ body {
     position: relative;
     box-sizing: border-box;
     font-family: Cantarell;
-    font-size: clamp(10px, 2.5vw,16px);
+    font-size: clamp(10px, 2vw,16px);
     overflow-x: hidden;
 }
 h1 {
@@ -193,3 +193,101 @@ a {
     }
 }
 /**slider*/
+/**hero*/
+.hero-avenger-container,
+.hero-protector-container {
+    margin-top: 100px;
+    display: flex;
+    margin-left: min(9vw,90px);
+    justify-content: space-between;
+}
+.hero-protector-container {
+    margin-top: 0;
+}
+.hero-presention {
+    max-width: 850px;
+    padding-right: 20px;
+}
+.hero-presentation__title {
+    margin-top: 40px;
+}
+.hero-actor__presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background: #ffffff;
+    color: #0B0B0B;
+    border-radius: 20px;
+    width: min(30vw,450px);
+    height: min(90vw,820px);
+    min-height: 750px;
+    position: relative;
+}
+.hero-actor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-actor__image {
+    width: min(30vw,350px);
+}
+.hero-actor__image,
+.hero-actor__name,
+.hero-actor__details,
+.hero-actor__label {
+    transform: translateY(-10%);
+}
+.hero-actor__label {
+    margin-bottom: 20px;
+}
+.hero-label__item {
+    background: #3D2DA6;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+}
+.hero-actor__details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
+    width: min(20vw,400px);
+    height: 250px;
+}
+@media (max-width: 1130px) {
+    .hero-actor__label {
+        align-self: stretch;
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-label__item  {
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 500px) {
+    .hero-avenger-container,
+    .hero-protector-container {
+        flex-direction: column;
+    }
+    .hero-actor__presentation {
+        margin-top: 50px;
+        width: min(70vw,450px);
+        height: min(130vw,500px);
+        min-height: 400px;
+    }
+    .hero-actor__details {
+        width: min(60vw,400px);
+    }
+    .hero-avenger-container {
+        margin-top: 0;
+    }
+    .hero-actor {
+        flex-direction: row;
+    }
+}
+/**hero*/
