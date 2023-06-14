@@ -3,6 +3,10 @@
     transition: transform 0.5s ease-in-out;
 }
 @font-face {
+    font-family: "WakandaForever";
+    src: url("../font/WakandaForever.ttf");
+}
+@font-face {
     font-family: "Beyno";
     src: url("../font/BEYNO.ttf");
 }
@@ -213,3 +217,76 @@ a {
     }
 }
 /**header*/
+/**body-enigme*/
+.body-enigme-container {
+    padding-top: min(8vw,170px);
+    margin-left: min(9vw,60px);
+}
+.body-enigme-title,
+.enigme-wakanda-letter {
+    font-family: WakandaForever;
+}
+.body-enigme-title {
+    width: min(100%,900px);
+}
+.enigme-details__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.enigme-details__left {
+    display: flex;
+    flex-direction: column;
+    height: min(30vw,500px);
+    width: min(80vw,500px);
+}
+.enigme-details__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(80vw,700px);
+    height: 400px;
+    background: url("../logo/Enigme/Pantherenigme2.png") center no-repeat;
+    border: solid transparent;
+    background-size: contain;
+}
+.enigme-details__item {
+    width: min(40vw,500px);
+}
+.enigme-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enigme-response__button {
+    outline: 0;
+    border: 0;
+    background: #F2CEF2;
+    width: min(20vw,174px);
+    height: min(10vw,54px);
+    border-radius: min(2vw,38px);
+    margin-top: 20px;
+    font-size: inherit;
+}
+.enigme-response__input {
+    width: min(40vw,520px);
+    height: min(10vw,56px);
+    border-radius: min(2vw,38px);
+    padding: 0 min(2vw,38px) 0 min(2vw,38px);
+    font-size: clamp(8px, 4vw,16px);
+    margin-top: min(2vw,20px);
+    background: none;
+    outline: none;
+    color:  rgba(222, 222, 222, 0.449);
+    border: 1px solid rgba(222, 222, 222, 0.449);
+}
+@media (max-width: 550px) {
+    .enigme-details__container {
+        flex-direction: column;
+    }
+    .enigme-details__item {
+        width: 100%;
+    }
+}
+/**body-enigme*/
