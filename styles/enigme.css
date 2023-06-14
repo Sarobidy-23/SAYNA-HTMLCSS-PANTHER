@@ -160,3 +160,56 @@ a {
     }
 }
 /**footer*/
+/**header*/
+.header-container {
+    height: min(40vw,550px);
+    min-height: 220px;
+    padding-top: min(8vw,170px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.header-background {
+    position: absolute;
+    z-index: -1;
+    top: -9vw;
+    left: 0;
+    width: min(60vw,800px);
+    min-width: 250px;
+}
+.header-title {
+    padding-right: min(10vw,100px);
+}
+.header-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(80vw,750px);
+    height: 400px;
+    background: url("../logo/Enigme/Pantherenigme2.png") center no-repeat;
+    border: solid transparent;
+    border-image:url("../logo/Enigme/Pantherenigme3.png") 2 repeat;
+    border-top:none;
+    background-size: cover;
+}
+.header-description__paragraphe {
+    width: min(47vw,585px);
+}
+@media (max-width: 550px) {
+    .header-title {
+        width: 100%;
+        padding: 0 0 0 min(10vw,100px);
+    }
+    .header-container {
+        align-items: center;
+    }
+    .header-description {
+        background: none;
+    }
+    .header-description__paragraphe {
+        width: 90%;
+    }
+}
+/**header*/
